@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "getJuiceboxGasSpend": "node scripts/getJuiceboxGasSpend.js",
-    "getMultisigGasSpend": "node scripts/getMultisigGasSpend.js"
+    "getMultisigGasSpend": "node scripts/getMultisigGasSpend.js",
+    "getTotalGasSpend": "node scripts/getTotalGasSpend.js"
   },
   "repository": {
     "type": "git",
