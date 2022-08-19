@@ -11,3 +11,11 @@ Calculate how much gas Peel contributors spent on `tap` (distribute) transaction
 ```
 npm run getJuiceboxGasSpend -- <start-block>
 ```
+
+### getMultisigGasSpend
+
+Calculate how much gas Peel contributors spent on executing multisig transactions from a given block.
+
+```
+npm run getMultisigGasSpend -- <start-block>
+```
