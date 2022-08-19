@@ -81,7 +81,7 @@ const getJuiceboxGasSpend = async ({ startblock } = {}) => {
 
   const sumGas = gas.reduce((acc, tx) => {
     if (acc[tx.from] === undefined) {
-      acc[tx.from] = BigNumber.from(0);
+      acc[tx.from] = tx.gasFeeGwei;
     } else {
       acc[tx.from] = acc[tx.from].add(tx.gasFeeGwei);
     }
