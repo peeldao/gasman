@@ -1,3 +1,7 @@
-last transaction compensated was https://etherscan.io/tx/0x4002f9977dc633d0dd5e72843ad4456b8aad3b4ef602c5496791e26560411add
+# Reimbursment record
 
-14561235
+Keep track of reimbursements here.
+
+| date of reimbursment | fromBlock        | toBlock    | Sample tx hash                                                       |
+| -------------------- | ---------------- | ---------- | -------------------------------------------------------------------- |
+| April 13, 2022       | _PeelDAO launch_ | `14561235` | `0x075bc7772b40b46d90261c91df0b1900d0781b0162e5d5d81c91b19d782cc7dc` |
