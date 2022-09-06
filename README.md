@@ -28,5 +28,5 @@ Calculate how much gas Peel contributors spent on transactions, from a given blo
 - `tap` (distribute) transactions
 
 ```
-npm run getTotalGasSpend -- <start-block>
+npm run getTotalGasSpend -- <start-block> <end-block>
 ```

@@ -59,9 +59,10 @@ const decodeTransactionInputs = (tx, functionName) => {
   return decodedData;
 };
 
-exports.getTapTransactions = async ({ startblock } = {}) => {
+exports.getTapTransactions = async ({ startblock, endblock } = {}) => {
   const transactions = await listTransactions(TerminalV1_1.address, {
     startblock,
+    endblock,
   });
 
   const tapTransactions = transactions.data.result.filter((tx) =>
@@ -84,9 +85,10 @@ exports.findPeelTransactions = (transactions) =>
       PEEL_CONTRIBUTORS.includes(utils.getAddress(tx.from))
   );
 
-exports.getMultisigTransactions = async ({ startblock } = {}) => {
+exports.getMultisigTransactions = async ({ startblock, endblock } = {}) => {
   const transactions = await listTransactions(MULTISIG_SAFE_ADDRESS, {
     startblock,
+    endblock,
   });
 
   return transactions.data.result;
