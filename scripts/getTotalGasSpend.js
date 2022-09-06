@@ -17,7 +17,10 @@ async function main() {
 
   const tapTransactions = await getTapTransactions({ startblock, endblock });
   const peelTaps = findPeelTransactions(tapTransactions);
-  const multisigTransactions = await getMultisigTransactions({ startblock, endblock });
+  const multisigTransactions = await getMultisigTransactions({
+    startblock,
+    endblock,
+  });
 
   const allTransactions = [...multisigTransactions, ...peelTaps];
 
