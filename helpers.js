@@ -2,7 +2,7 @@ const TerminalV1_1 = require("@jbx-protocol/contracts-v1/deployments/mainnet/Ter
 const {
   MULTISIG_SAFE_ADDRESS,
   TAP_FUNCTION_NAME,
-  PEEL_PROJECT_ID,
+  PEEL_V1_PROJECT_ID,
   PEEL_CONTRIBUTORS,
 } = require("./constants");
 const { utils, BigNumber } = require("ethers");
@@ -81,7 +81,7 @@ exports.getTapTransactions = async ({ startblock, endblock } = {}) => {
 exports.findPeelTransactions = (transactions) =>
   transactions.filter(
     (tx) =>
-      tx.decodedData._projectId.toNumber() === PEEL_PROJECT_ID &&
+      tx.decodedData._projectId.toNumber() === PEEL_V1_PROJECT_ID &&
       PEEL_CONTRIBUTORS.includes(utils.getAddress(tx.from))
   );
 

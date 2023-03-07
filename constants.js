@@ -1,5 +1,5 @@
 exports.TAP_FUNCTION_NAME = "tap";
-exports.PEEL_PROJECT_ID = 329;
+exports.PEEL_V1_PROJECT_ID = 329;
 exports.PEEL_CONTRIBUTORS = [
   "0xE16a238d207B9ac8B419C7A866b0De013c73357B", // aeolian
   "0x0028C35095D34C9C8a3bc84cB8542cB182fcfa8e", // aeolian (alt)
